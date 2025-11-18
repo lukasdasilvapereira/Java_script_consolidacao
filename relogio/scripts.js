@@ -14,9 +14,9 @@ function atualizaHorario() {
     seconds.innerHTML = segundos;
 
     if (horas < 10) {
-        hours.innerHTML = (`0:${horas}`);
+        hours.innerHTML = (`0${horas}`);
     } else if (minutos < 10) {
-        minutes.innerHTML = (`0:${minutos}`);
+        minutes.innerHTML = (`0${minutos}`);
     } else if (segundos < '10') {
         seconds.innerHTML = (`0:${segundos}`)
     }
