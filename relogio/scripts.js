@@ -18,10 +18,11 @@ function atualizaHorario() {
     } else if (minutos < 10) {
         minutes.innerHTML = (`0${minutos}`);
     } else if (segundos < '10') {
-        seconds.innerHTML = (`0:${segundos}`)
+        seconds.innerHTML = (`0${segundos}`);
     }
+
 }
 
 setInterval(() => {
     atualizaHorario()
-}, 1000);
+}, 1000)
