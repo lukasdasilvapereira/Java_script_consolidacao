@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar classes</title>
+</head>
+<style>
+    .highlight {
+        color: red;
+    }
+</style>
+<body>
+    <h1 id="title">Titulo da página</h1>
+    <button id="mudar-classe">Alterar classe</button>
+
+    <script>
+        const el = document.getElementById("title")
+        const btn = document.getElementById("mudar-classe")
+
+        btn.addEventListener("click", () => {
+            el.classList.toggle("highlight")
+        })
+
+    </script>
+</body>
+</html>

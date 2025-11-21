@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar cor</title>
+</head>
+<body>
+    <h1>Título da Página</h1>
+    <button id="change-color">Alterar cor</button>
+
+    <script>
+        const titleEl = document.querySelector("h1")
+
+        const btn = document.querySelector("#change-color")
+
+        btn.addEventListener("click", () => {
+            titleEl.style.color = "red"
+            titleEl.style.fontSize = "80px"
+        })
+    </script>
+</body>
+</html>
