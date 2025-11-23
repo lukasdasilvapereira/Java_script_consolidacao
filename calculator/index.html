@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-section">
+        <div class="main">
+            <input type="text" name="texto" id="texto">
+            <div class="keys">
+                <button onclick="clicar('+')" class="operador-btn">+</button>
+                <button onclick="clicar('7')">7</button>
+                <button onclick="clicar('8')">8</button>
+                <button onclick="clicar('9')">9</button>
+                <button onclick="clicar('-')" class="operador-btn">-</button>
+                <button onclick="clicar('4')">4</button>
+                <button onclick="clicar('5')">5</button>
+                <button onclick="clicar('6')">6</button>
+                <button onclick="clicar('*')" class="operador-btn">*</button>
+                <button onclick="clicar('1')">1</button>
+                <button onclick="clicar('2')">2</button>
+                <button onclick="clicar('3')">3</button>
+                <button onclick="clicar('/')" class="operador-btn">/</button>
+                <button onclick="clicar('0')">0</button>
+                <button onclick="clicar('.')">.</button>
+                <button onclick="calcular()">=</button>
+                <button onclick="limpar()" class="operador-btn">C</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scrips.js"></script>
+</body>
+</html>
