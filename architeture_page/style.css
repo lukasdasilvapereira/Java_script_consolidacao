@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+}
+
+.main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Courier New', Courier, monospace
+}
+
+.setas {
+    display: flex;
+    gap: 20px;
+}
+
+.setas p {
+    font-size: 2.5em;
+    color: black;
+    font-weight: bold;
+}
+
+.seta-1, .seta-2 {
+    cursor: pointer;
+}
