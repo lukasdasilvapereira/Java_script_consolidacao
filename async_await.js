@@ -1,4 +1,4 @@
-// ASYNC AWAI
+// ASYNC AWAIT
 
 async function cats(id) {
     try {

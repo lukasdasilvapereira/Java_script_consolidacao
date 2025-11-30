@@ -11,3 +11,35 @@ function retornaSegundoMaior() {
 }
 
 retornaSegundoMaior()
+
+// Temporizador
+
+function temporizador() {
+    console.log("Olá, essa é a mensagem")
+}
+
+
+setInterval(() => {
+    temporizador()
+}, 5000)
+
+
+// VALIDADOR DE SENHA
+
+let senha = "Flalucas123"
+let num = 1234567890
+
+if(senha.length < 8 ) {
+    console.log("Sua senha é menor que 8 caracteres")
+}
+
+else if(!/\d/.test(senha)) {
+    console.log("Sua senha precisa de um número")
+}
+
+else if(!/[A-Z]/.test(senha)) {
+    console.log("Sua senha precisa de uma letra maíscula ")
+}
+else {
+    console.log(`Sua senha é ${senha}`)
+}
