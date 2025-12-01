@@ -59,6 +59,36 @@ function inverterString(str) {
 
 console.log(inverterString(string))
 
+// 5
+
+let stri = "javascript"
+let vogais = "aeiou"
+
+function contarVogais(n) {
+    let contador = 0
+
+    for(let i = 0; i <= n.length; i++) {
+      if(vogais.includes(n[i])){
+        contador++
+      }
+    }
+
+    return contador
+}
+
+console.log(contarVogais(stri))
+
+// 6
+
+const nomes = ["lucas", "ana", "joão"];
+
+let x = nomes.map((n) => {
+    return n.toUpperCase()
+})
+
+console.log(x)
+
+
 
 
 
