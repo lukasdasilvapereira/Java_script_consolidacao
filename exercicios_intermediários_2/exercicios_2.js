@@ -70,17 +70,16 @@ console.log(contar(tr))
 
 let letras = "banana"
 
-function contarLetras(n) {
-    let contador = 0
-    let objeto = {}
-    let grandes = "abcdefghijklmnopqrstuvwxyz"
+function contarLetras(str) {
+    let objeto = {
+    }
 
-    for (let i = 0; i < n.length; i++) {
-        let letra = n[i]
-        if (grandes.includes(letra)) {
-            contador++
+    for (let i = 0; i < str.length; i++) {
+        let letra = str[i]
+        if (objeto[letra]) {
             objeto[letra]++
-            objeto[letra] = contador
+        } else {
+            objeto[letra] = 1
         }
     }
 
@@ -88,3 +87,63 @@ function contarLetras(n) {
 }
 
 console.log(contarLetras(letras))
+
+// NOVO 
+
+let frase = "o rato roeu a roupa do rei de roma";
+
+function fraseContar(n) {
+    let s = n.split(' ')
+    let objeto = {}
+
+    s.forEach(element => {
+        if (objeto[element]) {
+            objeto[element]++
+        } else {
+            objeto[element] = 1
+        }
+    });
+    return objeto
+}
+
+console.log(fraseContar(frase))
+
+// NUMEROS
+
+let numeros = [2, 5, 2, 8, 5, 5, 3, 8, 9, 2];
+
+function contarNum(n) {
+    let objeto = {}
+
+    n.forEach(num => {
+        if (objeto[num]) {
+            objeto[num]++
+        } else {
+            objeto[num] = 1
+        }
+    })
+
+    return objeto
+}
+
+console.log(contarNum(numeros))
+
+// PAR
+
+let nums = [7, 15, 22, 4, 9, 30, 17, 41, 2, 18];
+
+function encontrarPar(n) {
+    let maiorPar = null
+
+    n.forEach(num => {
+        if(num % 2 == 0){
+            if(maiorPar == null || num > maiorPar){
+                maiorPar = num
+            }
+        }
+    })
+    return maiorPar
+}
+
+console.log(encontrarPar(nums))
+
