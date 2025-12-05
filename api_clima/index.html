@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather RN</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="main-section">
         <div class="main">
-            
+            <input type="text" name="text" id="text">
+            <button type="submit" onclick="buscar()">Buscar</button>
+        </div>
+
+        <div class="container">
+            <h1>Previsão do tempo</h1>
+            <div class="section">
+                <img src="imagens/partly-cloudy-day--v1.png" alt="image" width="150px">
+                <div class="para">
+                    <p class="cidade">Cidade:</p>
+                    <p class="temperatura">Temperatura:</p>
+                    <p class="vento">Vento:</p>
+                    <p class="dia">Dia/Noite:</p>
+                </div>
+
         </div>
     </div>
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>
