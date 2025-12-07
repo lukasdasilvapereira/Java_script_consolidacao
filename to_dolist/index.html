@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="main-section">
+        <div class="main">
+            <h1>GERENCIADOR DE TAREFAS</h1>
+            <div class="duo">
+                <input type="text" name="adic" class="adic" placeholder="Adicionar tarefa">
+                <button class="adiciona" onclick="adicionar()">Adicionar</button>
+            </div>
+            <div class="processos">
+                <button class="todas" onclick="filtrar('todas')">Todas</button>
+                <button class="default" onclick="filtrar('default')">Pendentes</button>
+                <button class="progress" onclick="filtrar('progress')">Em progresso</button>
+                <button class="concluidas" onclick="filtrar('concluidas')">Concluídas</button>
+            </div>
+
+            <div class="tarefas-section">
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
