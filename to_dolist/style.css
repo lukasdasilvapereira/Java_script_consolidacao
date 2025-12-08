@@ -102,3 +102,26 @@ button {
     height: 350px;
     overflow-y: auto;
 }
+
+.change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.change img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.light-mode {
+    background-color: white;
+}
+
+.dark-mode {
+    background-color: black;
+}
