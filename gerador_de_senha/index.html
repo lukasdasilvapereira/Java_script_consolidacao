@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-section">
+        <div class="main">
+            <h1>Gerador de senha</h1>
+            <div class="size">
+                <label for="tamanho">Tamanho da senha:</label>
+                <input type="range" max="15" name="tamanho" id="tamanho">
+                <p class="len">0</p>
+            </div>
+            <div class="checkboxes">
+                <div class="checkbox">
+                    <input type="checkbox" name="maiusculas" id="maiusculas">
+                    <label for="maiusculas">Letras maiúsculas</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="minusculas" id="minusculas">
+                    <label for="minusculas">Letras minúsculas</label>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="numbers" id="numbers">
+                    <label for="numeros">Números</label>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="simbols" id="simbols">
+                    <label for="simbolos">Símbolos</label>
+                </div>
+            </div>
+
+            <button type="submit" onclick="gerar()">Gerar senha</button>
+
+            <div class="gerador">
+                <p>Senha gerada:</p>
+                <p class="senha_gerada"></p>
+            </div>
+            <button class="copy" onclick="copiar()">Copiar senha</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
