@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-section">
+        <div class="main">
+                <h1>SITUAÇÃO DO ALUNO</h1>
+                <div class="inputs">
+                    <label for="nota1">
+                        Nota 1
+                    </label>
+                    <input type="text" name="nota1" id="nota1">
+                </div>
+
+                <div class="inputs">
+                    <label for="nota2">
+                        Nota 2
+                    </label>
+                    <input type="text" name="nota2" id="nota2">
+                </div>
+
+                <div class="inputs">
+                    <label for="nota3">
+                        Nota 3
+                    </label>
+                    <input type="text" name="nota3" id="nota3">
+                </div>
+                
+                <button type="submit" onclick="calcular()">Calcular</button>
+                <p class="media">Média: 0</p>
+                <p class="maior">Maior nota: 0</p>
+                <p class="menor">Menor nota: 0</p>
+                <p class="situacao"><strong>Situação: </strong></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
