@@ -29,23 +29,40 @@ function holt() {
     total.innerHTML = `Total de votos: ${totalVotos}`
 }
 
+function reset() {
+    setTimeout(() => {
+        totalVotos = 0
+        contadorSanti = 0
+        contadorJake = 0
+        contadorHolt = 0
+
+        totalJake.innerHTML = `Jake: 0`
+        totalHolt.innerHTML = `Holt: 0`
+        totalSanti.innerHTML = `Santiago: 0`
+        total.innerHTML = `Total de votos: 0`
+        vencedor.innerHTML = "Vencedor: -"
+    }, 3000);
+}
+
 function mostrar() {
-    if (totalJake.value > totalSanti.value && totalHolt.value) {
-        vencedor.innerHTML = "Jake"
-
-    } 
-    
-    if (totalSanti.value > totalJake.value && totalHolt.value) {
-        vencedor.innerHTML = "Santiago"
+    if (contadorJake > contadorSanti && contadorJake > contadorHolt) {
+        vencedor.innerHTML = "Vencedor: Jake"
+        reset()
+        return
     }
 
-    if (totalHolt.value > totalJake.value && totalSanti.value) {
-        vencedor.innerHTML = "Holt"
+    if (contadorSanti > contadorJake && contadorSanti > contadorHolt) {
+        vencedor.innerHTML = "Vencedor: Santiago"
+        reset()
+        return
     }
 
+    if (contadorHolt > contadorJake && contadorHolt > contadorSanti) {
+        vencedor.innerHTML = "Vencedor: Holt"
+        reset()
+        return
+    }
 
-    total = 0
-    totalJake = 0
-    totalSanti = 0
-    totalHolt = 0
+    vencedor.innerHTML = "Vencedor: Empate"
+    reset()
 }
